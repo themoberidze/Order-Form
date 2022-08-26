@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Order Form</title>
+    <meta name="description" content="">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="main">
+            <h2>შეუკვეთე პროდუქტი დღესვე</h2>
+            <form action="action.html">
+                <label for="firstname"></label>
+                <input type="text" name="firstname" id="firstname" placeholder="სახელი" required>
+                <label for="lastname"></label>
+                <input type="text" name="lastname" id="lastname" placeholder="გვარი" required>
+                <label for="number"></label>
+                <input type="number" name="number" id="number" placeholder="ტელეფონის ნომერი" required>
+                <label for="messige">გთხოვთ მიუთითოთ ზუსტი მისამართი</label>
+                <textarea name="messige" id="messige" cols="30" rows="10" required></textarea>
+                <p>აირჩიეთ გადახდის მეთოდი</p>
+                <div class="pay">
+                    <input type="radio" name="pay" id="paycard" required>
+                    <label for="paycard">ბარათით გადახდა</label>
+                    <input type="radio" name="pay" id="paycash" required>
+                    <label for="paycash">ქეშით გადახდა</label>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">ვეთანხმები 
+                        <a href="./pdf/google_terms_of_service_en.pdf" target="_blank">წესებსა და პირობებს</a>
+                    </label>
+                </div>
+                <input type="submit" value="შეკვეთის გაფორმება">
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
